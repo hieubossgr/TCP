@@ -1,0 +1,11 @@
+Hướng dẫn:
+    1. Khởi tạo Socket server bằng cách run file "TCPSingleServer.java"
+    2. Khi Server được khởi tạo. Mở file "TCPClient.java" để chạy Socket phía Client
+        - Ban đầu sẽ có kiểu 1 menu cho mình lựa chọn "Tình trạng của hệ thống"
+            Chọn 1: Đã tạo 1 kết nối (Connected)
+            Chọn 2: Đang tạo 1 kết nối (Connecting)
+            Chọn 3: Hủy kết nối với Server (Disconnect)
+        - Sau khi chọn trạng thái xong gọi hàm "timer.schedule" để kiểm tra tình trạng của hệ thống và trả về kết quả tương ứng
+        - Cứ sau 20s hệ thống sẽ kiểm tra trạng thái hiện tại đồng thời hỏi bạn có muốn thay đổi trạng thái hay không.
+        - Bạn có thể chọn 1 để thay đổi trạng thái như 3 trạng thái ở trên
+        - Chọn 2 nếu không muốn thay đổi
